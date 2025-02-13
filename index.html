@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./deleteStyles.css">
+</head>
+
+<body >
+    <header>
+        <div class="header layout">
+            <div class="header__search ">
+                <img src="./src/imgs/search.svg" alt="">
+                <input type="text" placeholder="Search" class="header__input">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main__container layout">
+            <div class="main__header">
+                <h1 class="main__text">Board</h1>
+                <div class="main__timeset">
+                    <button class="main__timeBtn">This weekend</button>
+                    <img src="./src/imgs/arrowDown.svg" alt="arrowDown">
+                </div>
+            </div>
+        </div>
+
+        <div class="sectionsContainer layout">
+            <section aria-label="to do">
+                <div class="toDo">
+                    <div class="toDo__header">
+                        <h2>To Do</h2>
+                        <div class="toDo__actions">
+                            <img src="./src/imgs/plus.svg" alt="plus"
+                                class="toDo__actions toDo__btn-plus sectionBtnPlus" data-id="1">
+                            <img src="./src/imgs/editBtn.svg" alt="edit" class="toDo__actions toDo__btn-edit">
+                        </div>
+                    </div>
+
+                    <div class="toDo__body body">
+                    
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section aria-label="in progress">
+                <div class="inProgress">
+                    <div class="inProgress__header">
+                        <h2>In progress</h2>
+                        <div class="inProgress__actions">
+                            <img src="./src/imgs/plus.svg" alt="plus"
+                                class="inProgress__actions inProgress__btn-plus sectionBtnPlus" data-id="2">
+                            <img src="./src/imgs/editBtn.svg" alt="edit"
+                                class="inProgress__actions inProgress__btn-edit">
+                        </div>
+                    </div>
+
+
+
+                    <div class="inProgress__body body">
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section aria-label="done">
+                <div class="done">
+                    <div class="done__header">
+                        <h2>Done</h2>
+                        <div class="done__actions">
+                            <img src="./src/imgs/plus.svg" alt="plus"
+                                class="done__actions done__btn-plus sectionBtnPlus" data-id="3">
+                            <img src="./src/imgs/editBtn.svg" alt="edit" class="done__actions done__btn-edit">
+                        </div>
+                    </div>
+
+                    <div class="done__body body">
+
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+    </main>
+
+
+    <template class="item__tamplate">
+        <div class="item">
+            <div class="item__top">
+                <div class="item__type">
+                    <div class="item__color"></div>
+                    <p class="item__text"></p>
+                </div>
+                <div class="item__actions">
+                    <img src="./src/imgs/editBtn.svg" alt="edit" class="item__editBtn">
+                    <div class="editMenu hidden">
+                        <button class="editMenu__btnDelete">delete </button>
+                        <button class="editMenu__btnEdit">edit</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="item__body">
+                
+                <h3 class="item__bodyHeader"></h3>
+                <p class="item__bodyText"></p>
+            </div>
+        </div>
+    </template>
+
+    <div class="modal hidden" data-id="">
+        <div class="modal__window">
+            <select name="" id="" class="modal__select">
+                <option value="DESIGN SYSTEM">DESIGN SYSTEM</option>
+                <option value="TYPOGRAPHY">TYPOGRAPHY</option>
+                <option value="DEVELOPMENT">DEVELOPMENT</option>
+            </select>
+
+            <div class="modal__body">
+                <input type="text" class="modal__tittle">
+                <textarea name="" id="" class="modal_text"></textarea>
+            </div>
+
+            <div class="modal__actions">
+                <button class="modal__btnAdd">add to list</button>
+                <button class="modal__btnClose">close</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+
+
+</html>

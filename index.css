@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+.body {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.layout {
+    max-width: 95%;
+    margin: 0 auto;
+
+}
+
+.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header__input {
+    font-weight: 400;
+    font-size: 16px;
+    color: #707070;
+}
+
+.header__search {
+
+    display: flex;
+    gap: 5px;
+}
+
+.main__text {
+    font-weight: 500;
+    font-size: 29px;
+    color: #000;
+}
+
+.main__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.main__timeset {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main__timeBtn {
+    background: none;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+}
+
+.sectionsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toDo,
+.done,
+.inProgress {
+
+    background: #eef2f5;
+    border-radius: 10px;
+    width: 360px;
+    padding: 20px;
+}
+
+.toDo__header,
+.done__header,
+.inProgress__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.toDo__actions,
+.done__actions,
+.inProgress__actions {
+    display: flex;
+    gap: 15px;
+}
+
+.item {
+    border-radius: 20px;
+    width: 312px;
+    height: 207px;
+    background: #fff;
+    padding: 25px;
+}
+
+.item__type {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.item__text {
+    
+    font-weight: 500;
+    font-size: 8px;
+    color: #707070;
+}
+
+.item__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.item__body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item__bodyHeader {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+}
+
+.item__bodyText {
+    font-weight: 400;
+    height: 100%;
+    font-size: 12px;
+    color: #000;
+}
+
+.item__color {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__window {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 500px;
+    height: 250px;
+
+}
+
+.modal__body {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal__select {
+    max-width: 150px;
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.modal__tittle {
+    border: 1px solid black;
+    /* Тонкий черный бордер */
+    border-radius: 3px;
+    /* Закругляем углы на 10px */
+
+}
+
+.modal_text {
+    border: 1px solid black;
+    border-radius: 3px;
+    resize: none;
+    height: 120px;
+}
+
+.modal__btnAdd {
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: none;
+}
+
+.modal__btnClose {
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: none;
+}
+
+.modal__btnClose:hover {
+    background: gray;
+    opacity: 0.8;
+}
+
+.modal__btnAdd:hover {
+    background: gray;
+    opacity: 0.8;
+}
+
+.modal__actions {
+    display: flex;
+    gap: 7px;
+}
+
+.sectionBtnPlus {
+    cursor: pointer;
+}
+
+.hidden {
+
+
+    display: none !important;
+}
+
+.editMenu {
+    display: flex;
+    max-width: 50px;
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    gap: 5px;
+    
+    left: +15px;
+}
+
+
+.item__actions {
+    position: relative;
+    cursor: pointer;
+}
+
+.editMenu__btnDelete {
+    border-bottom: 0.5px solid red;
+}
+
+.editMenu__btnDelete,
+.editMenu__btnEdit {
+
+    color: white;
+    background: none;
+    text-align: left;
+}
